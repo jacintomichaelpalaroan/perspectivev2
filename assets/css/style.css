@@ -1,0 +1,121 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+#body{
+	background-image: url("./../img/bg_2.jpg");
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+#start_end{
+	font-size: 50px;
+	color: white;
+	 text-shadow: 5px 8px 5px orange;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	position: absolute;
+	 top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#background{
+	position: relative;
+	color: white;
+	text-shadow: 3px 3px gray;
+	display: none;
+}
+
+#header{
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+#instructions{
+	color: white;
+	font-family: 'Courgette', cursive;
+}
+
+#options{
+	position: relative;	
+	text-align: center;
+    color: black;
+    text-shadow: 2px 2px white;
+	font-weight: bold;
+	margin-bottom: 20px; 
+}
+
+.option{
+	position: absolute;
+	/*background-color: red;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*modal*/
+#questionbox{
+	width: 60em;
+	height: 25em;
+	background-image: url("./../img/oi_3.gif");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	overflow: hidden;
+	display: block;
+}
+/*hint*/
+#hintArea{
+	background-color: ;
+	display: block;
+	text-align: center;
+}
+
+#hintHeader{
+	position: relative;	
+	text-align: center;
+    color: black;
+    text-shadow: 2px 2px white;
+	font-weight: bold;
+}
+.hintTitle{
+	position: absolute;
+	/*background-color: red;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#hintBtn{
+	margin-top: 15px;
+}
+
+
+#hint{
+	font-size: 40px;
+}
+
+/*toggle*/
+.show{
+	display: none;
+}
+#retry_option{
+position: relative;	
+	text-align: center;
+    color: black;
+    text-shadow: 2px 2px white;
+	font-weight: bold;
+	margin-bottom: 20px; 
+}
+

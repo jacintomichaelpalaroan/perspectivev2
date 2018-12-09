@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Perception</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker" rel="stylesheet">
+	<!-- css links -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+	<!-- javascript jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+	<!-- popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<!-- bootstrap js -->
+	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+
+</head>
+<body id="body">
+	<!-- start and end message -->
+	<div id="start_end">	
+		<span id="message">Click to Play</span><br>
+		<span id="message2">Perception</span><br><br>
+		<span id="message3"></span>
+	</div>
+	<!-- game body -->
+	<div class="container-fluid" id="background">
+		<div class="row">
+			<div class="col col-sm-12 col-md-12 col-lg-12">
+				<!-- header -->
+				<h1 id="header">Seeing Colors</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-sm-12 col-md-3 col-lg3">
+				<!-- instructions -->
+				<h2 id="instructions">
+					Looks like you're seeing colors. How can you make them disappear?
+				</h2>
+				<!-- choices -->
+				<div  id="options">
+					<div class="option" >	
+						<span class="py-0 my-0" id="A">Stare</span>
+					</div>			
+					<img id="ChA" class="options" src="./assets/img/rockbutton2r.png">
+				</div>
+				<div  id="options">
+					<div class="option" >	
+						<span class="py-0 my-0" id="B">Close eyes</span>
+					</div>			
+					<img id="ChB" class="options" src="./assets/img/rockbutton2r.png">
+				</div>
+				<div  id="options">
+					<div class="option" >	
+						<span class="py-0 my-0" id="C">Blink Fast</span>
+					</div>			
+					<img id="ChC" class="options" src="./assets/img/rockbutton2r.png">
+				</div>				
+			</div>
+			<div class="col col-sm-12 col-md-9 col-lg-9">
+				<!-- image modal display -->
+				<div class="container-fluid" id="questionbox" data-toggle="modal" data-target=" .bd-example-modal-lg">
+					<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<img id="illusion" class="img-thumbnail" src="./assets/img/oi_3.gif">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- hint -->
+				<div class="container-fluid" id="hintArea">
+					<div>
+						<div  id="hintHeader">
+							<div class="hintTitle" >	
+								<span class="py-0 my-0" id="hintTitleText">Hint Here</span>
+							</div>			
+							<img id="hintBtn" class="options" src="./assets/img/rockbutton2r_sm.png">
+						</div>	
+					</div>
+					<!-- toggleable hint -->
+					<p  class="show" id="hint">
+						The answer you are looking for rhyms with Claire.
+					</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
+
